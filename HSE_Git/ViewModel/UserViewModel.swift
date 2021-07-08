@@ -14,3 +14,5 @@ public class UserViewModel: ObservableObject {
         users.append(newUser)
     }
 }
+
+// Потом добвлю взаимодействия через ViewModel с помощью @EnvironmentObject

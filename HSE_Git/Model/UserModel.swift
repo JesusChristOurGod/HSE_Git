@@ -10,6 +10,6 @@ struct UserModel: Identifiable {
     let id: String = UUID().uuidString
     let name: String
     let repos: [RepositoryModel]
-    let isFavourite: Bool
+    var isFavourite: Bool
     
 }

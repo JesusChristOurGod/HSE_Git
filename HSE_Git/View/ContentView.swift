@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// ContentView - просто родительский View для вкладок
 struct ContentView: View {
     @StateObject var userViewModel = UserViewModel()
     @StateObject var repositoryViewModel = RepositoryViewModel()
@@ -17,7 +17,7 @@ struct ContentView: View {
             BrowseView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                    Text ("Search for users")
+                    Text ("Search for repositories")
                 }
             FavouritesView()
                 .tabItem {
@@ -30,12 +30,6 @@ struct ContentView: View {
                     Image(systemName: "deskclock")
                     Text ("History of searches")
                 }
-
-//        }.onAppear(perform: {
-//            repositoryViewModel.addNewRepo(name: "Repository1", description: "Cool repo", language: "Java", userName: "Pablo")
-//            repositoryViewModel.addNewRepo(name: "Repository2", description: "Cool repo", language: "Java", userName: "Pablo")
-//            repositoryViewModel.addNewRepo(name: "Repository3", description: "Cool repo", language: "Java", userName: "Pablo")
-//        })
     }
 }
 }
